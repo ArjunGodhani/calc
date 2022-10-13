@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <title>Grade Calculator</title>
+</head>
+
+<body>
+
+    <div class="calc-body">
+        <div class="result">
+            <h1>Result</h1>
+            <div class="show">
+                <h2>Total:<span id="total"></span></h2>
+                <br>
+                <h2>Percentage:<span id="percentage"></span></h2>
+                <br>
+                <h2>Grade:<span id="grade"></span></h2>
+            </div>
+        </div>
+        <div class="inp">
+            <div class="main">
+                <input type="number" id="math" name="quantity" min="1" max="100" placeholder="Math"onchange="changeHandler(this)"><br>
+                <input type="number" id="physics" name="quantity" min="1" max="100" placeholder="Physics"onchange="changeHandler(this)"><br>
+                <input type="number" id="chemistry"  name="quantity" min="1" max="100" placeholder="Chemistry"onchange="changeHandler(this)"><br>
+                <input type="number" id="cprogramming"  name="quantity" min="1" max="100" placeholder="C Programming"onchange="changeHandler(this)"><br>
+                <input type="number" id="computer"  name="quantity" min="1" max="100" placeholder="Computer"onchange="changeHandler(this)"><br>
+                <button onclick="getResult()">Calculate Result</button>
+                <!-- <button onclick="reset()">reset</button> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
